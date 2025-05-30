@@ -16,8 +16,8 @@ services:
       - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
       - SPARK_SSL_ENABLED=no
     ports:
-      - "1600:7077"
-      - "1601:8080"
+      - "1700:7077"
+      - "1701:8080"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080"]
       interval: 30s
@@ -37,7 +37,7 @@ services:
     depends_on:
       - spark-master
     ports:
-      - "1602:8081"
+      - "1702:8081"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8081"]
       interval: 30s
@@ -57,7 +57,7 @@ services:
     depends_on:
       - spark-master
     ports:
-      - "1603:8081"
+      - "1703:8081"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8081"]
       interval: 30s
