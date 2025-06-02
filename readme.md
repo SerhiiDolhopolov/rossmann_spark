@@ -47,4 +47,4 @@ This section contains an example of working with large archived dataframes via [
 ```bash
 docker compose up --build
 ```
-3. Open [localhost:1701](http://localhost:1701)
+3. Open [localhost:8888](http://localhost:8888)
